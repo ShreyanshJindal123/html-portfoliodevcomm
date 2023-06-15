@@ -1,0 +1,172 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+
+<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+
+<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+
+<!-- TODO 4: Add titles/subtitles etc. -->
+
+<!-- TODO 5: Add a link to the project pages -->
+
+<!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: Add the Contact Me and About Me page links -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            border: 0px;
+        }
+
+        #top {
+            display: flex;
+        }
+
+        .head {
+            /* display: flex; */
+        }
+
+        #heading {
+            color: aqua;
+            margin: 3rem;
+            font-size: 5rem;
+            /* animation */
+             animation-name: shree123; 
+             animation-duration: 4s; 
+             animation-delay: 0s;
+             animation-iteration-count: infinite;
+        }
+        @keyframes shree123 {
+            0%{
+                color: aqua;
+            }
+            /* 25%{
+               color: chartreuse;
+            } */
+            50%{
+                color: plum ;
+            }
+            100%{
+                color: yellow;
+            }
+        }
+
+        #About {
+            color: white;
+            margin-left: 20px;
+            width: 30rem;
+            height: 20rem;
+            font-size: 3rem;
+            border: 6px solid lime;
+            padding: 0.5em;
+            box-shadow: 16px 17px gainsboro;
+            background-color: black;
+            opacity: 20;
+            transition:/*all*/background-color 2s ease-in 0s ;
+        }
+        #About:hover{
+            background-color: grey;
+            /* transform: rotate(45deg); */
+        }
+
+        #right {
+            margin-left: 14rem;
+            margin-top: 5rem;
+        }
+
+        #dp {
+            height: 33rem;
+            width: 30rem;
+            border: 5px solid sandybrown;
+        }
+
+        #midhead {
+            color: lightgreen;
+            font-size: 3rem;
+            margin: 5rem;
+        }
+
+        #ms1 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.3rem;
+            color: pink;
+        }
+
+        #link {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #linkdp {
+            height: 35rem;
+            width: 65rem;
+            border: 5px solid orange;
+
+        }
+
+        #lowertab {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 2rem;
+
+        }
+
+        .ca {
+            padding: 2rem;
+            text-decoration: none;
+            color: lightgoldenrodyellow;
+            /* text-shadow: 0px 0px white; */
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <div class="head" id="left">
+            <h1 id="heading">HELLO!</h1>
+
+            <p id="About">I am Shreyansh, a web developer who has just entered the field of web development. <br> I hope
+                you
+                like my PORTFOLIO. </p>
+        </div>
+        <div class="head" id="right">
+            <img id="dp" src="./assets/images/WhatsApp Image 2023-06-15 at 12.20.08.jpg" alt="profile piture">
+        </div>
+
+
+    </header>
+    <div id="mid">
+        <h1 id="midhead">PREVIOUS WORK</h1>
+        <!-- midsubhead=ms -->
+        <H2 id="ms1">SPACE EXPLORATION WEBSITE</H2>
+        <div>
+            <a href="https://elaborate-palmier-01c819.netlify.app/" target="_blank" id="link"><img id="linkdp"
+                    src="./public/2023-06-15 (2).png" alt=""></a>
+        </div>
+    </div>
+    <footer>
+        <nav id="lowertab">
+            <a class="ca" href="./public/contact.html" target="_blank">CONTACT ME</a>
+            <a class="ca" href="./public/about.html" target="_blank"> ABOUT ME</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
