@@ -12,170 +12,183 @@
             color: white;
             margin: 0px;
             border: 0px;
+            width: 100vw;
         }
-
         #top {
-            display: flex;
-            justify-content: space-between;
-        }
+        display: flex;
+        justify-content: space-between;
+    }
 
-        .head {
-            /* display: flex; */
+    .head {
+        /* display: flex; */
 
-        }
+    }
 
-        #heading {
+    #heading {
+        color: aqua;
+        margin: 3rem;
+        font-size: 5rem;
+        /* animation */
+        animation-name: shree123;
+        animation-duration: 4s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shree123 {
+        0% {
             color: aqua;
-            margin: 3rem;
-            font-size: 5rem;
-            /* animation */
-            animation-name: shree123;
-            animation-duration: 4s;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
         }
 
-        @keyframes shree123 {
-            0% {
-                color: aqua;
-            }
-
-            /* 25%{
-               color: chartreuse;
-            } */
-            50% {
-                color: plum;
-            }
-
-            100% {
-                color: yellow;
-            }
+        /* 25%{
+           color: chartreuse;
+        } */
+        50% {
+            color: plum;
         }
 
-        #About {
-            color: white;
-            margin-left: 20px;
-            margin-right: 25px;
-            width: 399px;
-            /* height: 356px; */
-            font-size: 45px;
-            border: 6px solid lime;
-            padding: 0.5em;
-            box-shadow: 16px 17px gainsboro;
-            background-color: black;
-            opacity: 20;
-            transition:
-                /*all*/
-                background-color 2s ease-in 0s;
+        100% {
+            color: yellow;
         }
+    }
 
-        #About:hover {
-            background-color: grey;
-            /* transform: rotate(45deg); */
-        }
+    #About {
+        color: white;
+        margin-left: 20px;
+        margin-right: 25px;
+        max-width: 399px;
+        /* height: 356px; */
+        font-size: 45px;
+        border: 6px solid lime;
+        padding: 0.5em;
+        box-shadow: 16px 17px gainsboro;
+        background-color: black;
+        opacity: 20;
+        transition:
+            /*all*/
+            background-color 2s ease-in 0s;
+    }
 
-        #right {
+    #About:hover {
+        background-color: grey;
+        /* transform: rotate(45deg); */
+    }
 
-            margin-right: 30px;
-            margin-top: 5rem;
+    #right {
+
+        margin-right: 30px;
+        margin-top: 5rem;
+    }
+
+    #dp {
+        height: 33rem;
+        width: 30rem;
+        border: 5px solid sandybrown;
+    }
+
+    #mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Added to center content horizontally */
+        /* padding: 2rem; */
+    }
+    #mid1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #midhead {
+        color: lightgreen;
+        font-size: 5vw;
+        margin: 5rem;
+        border: 2px dotted rgb(233, 212, 233);
+       
+    }
+
+    #ms1 {
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+        color: pink;
+    }
+
+    #link {
+        display: flex;
+        justify-content: center;
+    }
+
+    #linkdp {
+        height: 500px;
+        max-width: 95vw;
+        border: 5px solid orange;
+    }
+
+    #bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+    #lowertab {
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        margin: 2rem;
+    }
+
+    .ca {
+        padding: 2rem;
+        text-decoration: none;
+        color: lightgoldenrodyellow;
+        /* text-shadow: 0px 0px white; */
+    }
+
+    @media screen and (max-width: 950px) {
+        #top {
+            flex-wrap: wrap;
         }
 
         #dp {
-            height: 33rem;
-            width: 30rem;
-            border: 5px solid sandybrown;
-        }
-        #mid{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; /* Added to center content horizontally */
-/*             padding: 2rem; */
-        }
-
-        #mid1 {
-            display: flex;
-            justify-content: center;
-        }
-
-        #midhead {
-            color: lightgreen;
-            font-size: 5vw;
-            margin: 5rem;
-            border: 2px dotted rgb(233, 212, 233);
-            display: flex;
-            justify-content: center;
-
-        }
-
-        #ms1 {
-            display: flex;
-            justify-content: center;
-            font-size: 5vw;
-            color: pink;
-        }
-
-        #link {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        #linkdp {
-            height: 500px;
-            width: 95vw;
-            border: 5px solid orange;
-
-        }
-        #bottom{
+            margin-left: 20px;
             display: flex;
             justify-content: center;
         }
 
         #lowertab {
-            display: flex;
-            justify-content: center;
-            font-size: 2vw;
-            margin: 2rem;
-
+            flex-wrap: wrap;
         }
 
-        .ca {
-            padding: 2rem;
-            text-decoration: none;
-            color: lightgoldenrodyellow;
-            /* text-shadow: 0px 0px white; */
+        /* #mid1 {
+            display: inline;
+            margin: auto;
+        } */
+
+        #ms1 {
+            margin-left: 25px;
         }
 
-        @media screen and (max-width: 950px) {
-            #top {
-                flex-wrap: wrap;
-            }
-
-            #dp {
-                margin-left: 20px;
-                display: flex;
-                justify-content: center;
-            }
-
-            #lowertab {
-                flex-wrap: wrap;
-            }
-
-            /* #mid1 {
-                display: inline;
-                margin: auto;
-            } */
-
-            #ms1 {
-                margin-left: 25px;
-            }
-
-            #link {
-                margin: 20px;
-            }
+        #link {
+            margin: 20px;
         }
-    </style>
+    }
+    @media screen and (max-width: 530px){
+    body{
+        width: 132vw;
+    }
+        #dp{
+            margin-right: 20px;
+        }
+        #mid{
+            /* margin-left: 40px; */
+        }
+        
+    }
+    @media screen and (max-width: 330px){
+    body{
+        width: 150vw;
+    }
+}
+</style>
 </head>
 
 <body>
